@@ -1,0 +1,6 @@
+## Run every six hours: (https://crontab.guru/#0_*/6_*_*_*)
+0 */6 * * * docker run -v /efi_neon_challenge:/efi_neon_challenge -d rstudio Rscript /efi_neon_challenge/home/source_directory.R /home/download_neon
+0 */6 * * * docker run -v /efi_neon_challenge:/efi_neon_challenge -d rstudio Rscript source_directory.R /home/generate_targets
+0 */6 * * * docker run -v /efi_neon_challenge:/efi_neon_challenge -d rstudio Rscript source_directory.R /home/generate_targets
+0 */6 * * * docker run -v /efi_neon_challenge:/efi_neon_challenge -d rstudio Rscript source_directory.R /home/generate_null_forecast
+
